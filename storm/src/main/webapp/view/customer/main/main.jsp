@@ -62,10 +62,22 @@
 				<a href="customer/beautiful_wallpaper">精美壁纸</a>
 				<a href="customer/official_comics">官方漫画</a>
 			</div>
+			
+			
+			<img id="customer_default_avatar" alt="avatar" src="image/customer/default_ava.png" />
+			
+			<div class="nav_login">
+				您好，请<a href="javascript:gotoLogin();">登录</a><br/>
+				<span>登录后可进入您的个人中心</span>
+			</div>
 		</div>
 	</div>
 	<div class="holy">
-		
+		<div id="scroll_image">
+			<img src="image/customer/main_scroll_1/1.jpg" alt="1" />
+			<img src="image/customer/main_scroll_1/2.jpg" alt="2" />
+			<img src="image/customer/main_scroll_1/3.jpg" alt="3" />
+		</div>
 	</div>
 	<iframe id="bottomIframe" name="bottomIframe" src="customer/bottom" 
 		scrolling="no" frameborder="no" border="0" marginwidth="0" marginheight="0">
@@ -73,5 +85,6 @@
 </body>
 
 <script type="text/javascript" src="plugin/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="plugin/Flux-Slider-master/js/flux.js"></script>
 <script type="text/javascript" src="view/customer/main/main.js"></script>
 </html>
