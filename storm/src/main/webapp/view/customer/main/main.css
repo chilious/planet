@@ -89,9 +89,78 @@ body{
 	background:no-repeat 100% 100% url(../../../image/game/customer.home.holy.bg.png);
 }
 #scroll_image{
-	width:1320;
 	height:700px;
-	margin:0 auto;
+}
+.holy_submodule{
+	width:1320;
+	margin:0 auto 50px auto;
+}
+.sub_left{
+	float:left;
+	width:780px;
+	margin-right:50px;
+}
+.sub_left a{
+	display:inline-block;
+	float:left;
+	width:250px;
+	height:90px;
+	overflow:hidden;
+}
+.sub_left a:first-child{
+	margin-right:15px;
+	background-image:url(../../../image/customer/left_buttons.png);
+	background-position:top left;
+}
+.sub_left a:first-child:hover{
+	background-position:bottom left;
+}
+.sub_left a:nth-child(2){
+	margin-right:15px;
+	background-image:url(../../../image/customer/left_buttons.png);
+	background-position:top center;
+}
+.sub_left a:nth-child(2):hover{
+	background-position:bottom center;
+}
+.sub_left a:nth-child(3){
+	background-image:url(../../../image/customer/left_buttons.png);
+	background-position:top right;
+}
+.sub_left a:nth-child(3):hover{
+	background-position:bottom right;
+}
+.sub_right{
+	width:490px;
+	float:left;
+}
+.sub_right a{
+	display:inline-block;
+	float:left;
+	width:163.3px;
+	height:90px;
+	overflow:hidden;
+}
+.sub_right a:first-child{
+	background-image:url(../../../image/customer/right_buttons.png);
+	background-position:top left;
+}
+.sub_right a:first-child:hover{
+	background-position:bottom left;
+}
+.sub_right a:nth-child(2){
+	background-image:url(../../../image/customer/right_buttons.png);
+	background-position:top center;
+}
+.sub_right a:nth-child(2):hover{
+	background-position:bottom center;
+}
+.sub_right a:nth-child(3){
+	background-image:url(../../../image/customer/right_buttons.png);
+	background-position:top right;
+}
+.sub_right a:nth-child(3):hover{
+	background-position:bottom right;
 }
 #bottomIframe{
 	border:none;

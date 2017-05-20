@@ -12,7 +12,7 @@
 <body>
 	<div class="head">
 		<div>
-			<img id="gamelogo" alt="gun" src="image/game/gun1.png" />
+			<img id="gamelogo" alt="gun" src="image/game/wf.png" />
 			<div class="nav">
 				<a href="#" target="_self">首页<br/><span>HOME</span></a>
 				<a href="customer/person_center">个人中心</a>
@@ -73,11 +73,26 @@
 		</div>
 	</div>
 	<div class="holy">
-		<div id="scroll_image">
-			<img src="image/customer/main_scroll_1/1.jpg" alt="1" />
-			<img src="image/customer/main_scroll_1/2.jpg" alt="2" />
-			<img src="image/customer/main_scroll_1/3.jpg" alt="3" />
+		<div id="scroll_image" class="holy_submodule">
+			<a href="http://www.baidu.com" target="_blank"><img src="image/customer/main_scroll_1/1.jpg" alt="1" /></a>
+			<a href="http://www.baidu.com" target="_blank"><img src="image/customer/main_scroll_1/2.jpg" alt="2" /></a>
+			<a href="http://www.baidu.com" target="_blank"><img src="image/customer/main_scroll_1/3.jpg" alt="3" /></a>
 		</div>
+		
+		<div class="holy_submodule">
+			<div class="sub_left">
+				<a href="http://www.baidu.com" target="_blank"></a>
+				<a href="http://www.baidu.com" target="_blank"></a>
+				<a href="http://www.baidu.com" target="_blank"></a>
+			</div>
+			<div class="sub_right">
+				<a href="http://www.baidu.com" target="_blank"></a>
+				<a href="http://www.baidu.com" target="_blank"></a>
+				<a href="http://www.baidu.com" target="_blank"></a>
+			</div>
+		</div>
+		
+		
 	</div>
 	<iframe id="bottomIframe" name="bottomIframe" src="customer/bottom" 
 		scrolling="no" frameborder="no" border="0" marginwidth="0" marginheight="0">
@@ -86,5 +101,6 @@
 
 <script type="text/javascript" src="plugin/jquery/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="plugin/Flux-Slider-master/js/flux.js"></script>
+<script type="text/javascript" src="plugin/layer/layer.js"></script>
 <script type="text/javascript" src="view/customer/main/main.js"></script>
 </html>

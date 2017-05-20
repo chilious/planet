@@ -11,15 +11,17 @@
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/tx 
         http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
         http://cxf.apache.org/jaxws 
 		http://cxf.apache.org/schemas/jaxws.xsd
         http://cxf.apache.org/jaxrs 
 		http://cxf.apache.org/schemas/jaxrs.xsd
         http://www.springframework.org/schema/mvc 
         http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
-    <!-- 访问静态资源 -->
-	<mvc:default-servlet-handler/>
-	
+	<!-- 访问静态资源 -->
+	<mvc:default-servlet-handler />
+
 	<!-- 注解扫描 -->
 	<context:component-scan base-package="com.night"></context:component-scan>
 
@@ -32,12 +34,60 @@
 		<property name="prefix" value="/view/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-	
+
+	<!-- 加载数据库配置文件 -->
+	<!-- 加载DBCP配置文件 -->
+	<context:property-placeholder location="classpath:db_config.properties,classpath:dbcp_config.properties" />
+	<!--数据源 -->
+	<bean id="data_source" class="org.apache.commons.dbcp2.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>${jdbc.driver}</value>
+		</property>
+		<property name="url">
+			<value>${jdbc.url}</value>
+		</property>
+		<property name="username">
+			<value>${jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${jdbc.password}</value>
+		</property>
+		<property name="initialSize">
+			<value>${dbcp.initialSize}</value>
+		</property>
+		<property name="maxTotal">
+			<value>${dbcp.maxActive}</value>
+		</property>
+		<property name="minIdle">
+			<value>${dbcp.minIdle}</value>
+		</property>
+		<property name="maxIdle">
+			<value>${dbcp.maxIdle}</value>
+		</property>
+		<property name="maxWaitMillis">
+			<value>${dbcp.maxWait}</value>
+		</property>
+	</bean>
+
+	<!-- 创建sessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<!-- 导入数据源 -->
+		<property name="dataSource" ref="data_source" />
+		<!-- 导入hibernate配置文件 -->
+		<property name="configLocations">
+			<value>classpath:hibernate.xml</value>
+		</property>
+	</bean>
+
+	<!-- 创建HibernateTemplate -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+		<!-- 注入sessionfactory -->
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<!-- 拦截器 -->
-	<!-- <mvc:interceptors>
-		<mvc:interceptor>
-			<mvc:mapping path="/**" />
-			<bean class="" ></bean>
-		</mvc:interceptor>
-	</mvc:interceptors> -->
+	<!-- <mvc:interceptors> <mvc:interceptor> <mvc:mapping path="/**" /> <bean 
+		class="" ></bean> </mvc:interceptor> </mvc:interceptors> -->
 </beans>

@@ -31,7 +31,13 @@ function listenAll(){
  * 打开登录窗口
  */
 function gotoLogin(){
-	
+	layer.open({
+	  type: 2,
+	  title:'',
+	  area: ['360px', '430px'],
+	  skin: 'layui-layer-rim', //加上边框
+	  content: ['customer/login_page', 'no']
+	});
 }
 /**
  * 图片轮播
