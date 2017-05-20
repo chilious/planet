@@ -1,0 +1,41 @@
+[DEBUG][2017/05/20 11:23:23700][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [servletConfigInitParams] PropertySource with lowest search precedence
+ [DEBUG][2017/05/20 11:23:23702][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [servletContextInitParams] PropertySource with lowest search precedence
+ [DEBUG][2017/05/20 11:23:23707][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+ [DEBUG][2017/05/20 11:23:23708][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+ [DEBUG][2017/05/20 11:23:23710][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+ [DEBUG][2017/05/20 11:23:23711][org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:177)]
+Initializing filter 'encodingFilter'
+ [DEBUG][2017/05/20 11:23:23741][org.springframework.core.io.support.SpringFactoriesLoader.loadFactories(SpringFactoriesLoader.java:89)]
+Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+ [DEBUG][2017/05/20 11:23:23752][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:265)]
+Getting BeanInfo for class [org.springframework.web.filter.CharacterEncodingFilter]
+ [DEBUG][2017/05/20 11:23:23757][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:284)]
+Caching PropertyDescriptors for class [org.springframework.web.filter.CharacterEncodingFilter]
+ [DEBUG][2017/05/20 11:23:23757][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'beanName' of type [java.lang.String]
+ [DEBUG][2017/05/20 11:23:23766][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'class' of type [java.lang.Class]
+ [DEBUG][2017/05/20 11:23:23776][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'encoding' of type [java.lang.String]
+ [DEBUG][2017/05/20 11:23:23777][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'environment' of type [org.springframework.core.env.Environment]
+ [DEBUG][2017/05/20 11:23:23777][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'filterConfig' of type [javax.servlet.FilterConfig]
+ [DEBUG][2017/05/20 11:23:23778][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'forceEncoding' of type [boolean]
+ [DEBUG][2017/05/20 11:23:23778][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'forceRequestEncoding' of type [boolean]
+ [DEBUG][2017/05/20 11:23:23778][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'forceResponseEncoding' of type [boolean]
+ [DEBUG][2017/05/20 11:23:23779][org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:297)]
+Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+ [DEBUG][2017/05/20 11:23:23797][org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:438)]
+Converting String to [boolean] using property editor [org.springframework.beans.propertyeditors.CustomBooleanEditor@45ff5109]
+ [DEBUG][2017/05/20 11:23:23798][org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:202)]
+Filter 'encodingFilter' configured successfully
+ 

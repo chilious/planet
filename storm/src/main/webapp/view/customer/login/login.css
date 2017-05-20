@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#383838;
+	color:#b7b7b7;
+	font-size:17px;
+	font-family:mircosoft yahei;
+}
+.top{
+	width:100%;
+	height:170px;
+	background-image:url(../../../image/game/gun.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:scroll;
+	background-origin:border-box;
+	background-size:100% 100%;
+}
+.row{
+	width:100%;
+	height:40px;
+}
+.msg{
+	width:100%;
+	color:red;
+	font-size:13px;
+	height:25px;
+}
+.fillin{
+	width:100%;
+	height:100%;
+	font-size:20px;
+	letter-spacing:3px;
+}
+#other_option input{
+	float:left;
+}
+#other_option span{
+	float:left;
+}
+#other_option a{
+	float:right;
+	color:#b7b7b7;
+}
+#submit{
+	background-color:#bf3500;
+    text-align:center;
+	letter-spacing:30px;
+	font-size:25px;
+	line-height:40px;
+	cursor:pointer;
+}
