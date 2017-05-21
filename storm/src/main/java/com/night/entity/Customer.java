@@ -31,6 +31,9 @@ public class Customer {
 	@Column(name="password")
 	private String password;
 	
+	@Column(name="frozen")
+	private Integer frozen;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -66,5 +69,11 @@ public class Customer {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public Integer getFrozen() {
+		return frozen;
+	}
+	public void setFrozen(Integer frozen) {
+		this.frozen = frozen;
 	}
 }

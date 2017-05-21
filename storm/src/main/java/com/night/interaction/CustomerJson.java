@@ -4,7 +4,9 @@ import java.util.HashMap;
 
 public class CustomerJson extends HashMap<String,Object>{
 	private static final long serialVersionUID = 8084663215902248206L;
-	public CustomerJson(){}
+	public CustomerJson(){
+		this.put("msg", "");
+	}
 	public CustomerJson(boolean success,String msg){
 		this.put("success", success);
 		this.put("msg", msg);

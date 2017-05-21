@@ -86,7 +86,15 @@
 		<!-- 注入sessionfactory -->
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-
+	
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<!-- 注入sessionfactory -->
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 开启事物注解 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
 	<!-- 拦截器 -->
 	<!-- <mvc:interceptors> <mvc:interceptor> <mvc:mapping path="/**" /> <bean 
 		class="" ></bean> </mvc:interceptor> </mvc:interceptors> -->

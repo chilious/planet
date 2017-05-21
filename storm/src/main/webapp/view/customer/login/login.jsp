@@ -17,7 +17,7 @@
 		<input type="text" class="fillin" name="customer_account"
 			placeholder="账号" maxlength="50" />
 	</div>
-	<div class="msg" id="pasword_msg"></div>
+	<div class="msg" id="password_msg"></div>
 	<div class="row">
 		<input type="password" class="fillin" name="customer_password"
 			placeholder="密码" maxlength="50" />
@@ -33,5 +33,6 @@
 </body>
 
 <script type="text/javascript" src="plugin/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="view/util/string_util.js"></script>
 <script type="text/javascript" src="view/customer/login/login.js"></script>
 </html>
